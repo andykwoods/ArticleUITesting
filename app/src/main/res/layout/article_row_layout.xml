@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="@android:color/white">
     
     <View
@@ -10,8 +12,9 @@
         android:layout_width="@dimen/activity_horizontal_margin"
         android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/article_info_divider"
         android:background="@android:color/holo_blue_dark"
-        android:layout_above="@+id/article_info_divider"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         />
 
@@ -32,8 +35,7 @@
         android:textColor="@android:color/black"
         android:layout_toStartOf="@+id/article_type_indicator"
         android:layout_toEndOf="@+id/article_thumbnail"
-        android:layout_marginTop="15dp"
-        android:lines="1"
+        android:lines="2"
         android:ellipsize="end"
         android:text="News Just In"/>
 
@@ -41,7 +43,7 @@
         android:id="@+id/article_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:textSize="15sp"
         android:textColor="@android:color/darker_gray"
         android:layout_below="@+id/article_title"
         android:layout_toStartOf="@+id/article_type_indicator"
@@ -56,9 +58,10 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#eeeeee"
-        android:layout_below="@+id/article_thumbnail"
+        android:layout_below="@+id/article_description"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
 
     <TextView
         android:id="@+id/article_author"

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:background="@android:color/white">
+    
+    <View
+        android:id="@+id/article_type_indicator"
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_above="@+id/article_info_divider"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        />
+
+    <ImageView
+        android:id="@+id/article_thumbnail"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/news"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:id="@+id/article_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_toStartOf="@+id/article_type_indicator"
+        android:layout_toEndOf="@+id/article_thumbnail"
+        android:layout_marginTop="15dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="News Just In"/>
+
+    <TextView
+        android:id="@+id/article_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@+id/article_title"
+        android:layout_toStartOf="@+id/article_type_indicator"
+        android:layout_toEndOf="@+id/article_thumbnail"
+        android:layout_marginTop="10dp"
+        android:lines="3"
+        android:ellipsize="end"
+        android:text="News Just In"/>
+
+    <View
+        android:id="@+id/article_info_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_below="@+id/article_thumbnail"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/article_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@+id/article_info_divider"
+        android:layout_alignParentStart="true"
+        android:lines="1"
+        android:fontFamily="sans-serif-light"
+        android:text="Andrew Woods"/>
+
+
+    <TextView
+        android:id="@+id/article_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@+id/article_info_divider"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:lines="1"
+        android:fontFamily="sans-serif-light"
+        android:text="8 am, 20 Dec 2016"/>
+
+</RelativeLayout>

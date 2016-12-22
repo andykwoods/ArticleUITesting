@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ArticleUITesting</string>
+
+    <string name="article_thumbnail">Article Thumbnail</string>
 </resources>

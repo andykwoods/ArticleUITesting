@@ -19,8 +19,9 @@
         android:id="@+id/article_thumbnail"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/news"
+        android:src="@drawable/business"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:contentDescription="@string/article_thumbnail"
         />
 
     <TextView

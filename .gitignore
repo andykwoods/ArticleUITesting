@@ -1,0 +1,8 @@
+local.properties
+project.properties
+/gen/
+/bin/
+.idea/
+.gradle/
+/build/
+ArticleUITesting.iml

@@ -12,11 +12,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class ArticleUIStructureFactory {
+class ArticleUIStructureFactory {
 
-    private static final String DATE_FORAMT = "K:mm a, d MMM yyyy";
+    private static final String DATE_FORMAT = "K:mm a, d MMM yyyy";
 
-    public static ArticleUIStructure buildArticleUIStructure(Article article) {
+    static ArticleUIStructure buildArticleUIStructure(Article article) {
         if (article == null)
             return null;
         else {
@@ -54,7 +54,7 @@ public class ArticleUIStructureFactory {
     private static String buildStructureTimePosted(Article article) {
         DateFormatSymbols symbols = getLowerCaseAmPmSymbols();
         @SuppressLint("SimpleDateFormat")
-        SimpleDateFormat format = new SimpleDateFormat(DATE_FORAMT, symbols);
+        SimpleDateFormat format = new SimpleDateFormat(DATE_FORMAT, symbols);
         return format.format(new Date(article.timePosted));
     }
 
